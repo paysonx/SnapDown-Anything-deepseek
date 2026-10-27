@@ -1,0 +1,77 @@
+# 运行数据：SQLite 数据库、下载分片与成品（本项目最容易误提交的一类）
+.data/
+.data-server.log
+.data-server.err
+*.db
+*.db-wal
+*.db-shm
+*.part
+*.ytdl
+
+# 下载产物兜底：DATA_DIR 允许指到仓库内，别让视频/音频混进仓库
+*.mp4
+*.webm
+*.mkv
+*.flv
+*.mov
+*.m4a
+*.mp3
+*.flac
+*.opus
+*.wav
+!tests/fixtures/**
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+build/
+dist/
+
+# 前端
+node_modules/
+web/dist/
+*.tsbuildinfo
+.vite/
+
+# 本地配置：允许提交示例模板，其余一律忽略
+.env
+.env.*
+!.env.example
+
+# 日志与临时文件
+*.log
+*.pid
+*.tmp
+*.orig
+tmp/
+.tmp/
+.tmp-cli/
+build.log
+probe-*/
+probe2-*/
+pytest-of-*/
+
+# 文档资源：只入库两份说明；logo 源图、验收截图与设计稿留在本地
+docs/logo.png
+docs/screenshot-*.png
+docs/design-preview.*
+
+# 系统与编辑器
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
